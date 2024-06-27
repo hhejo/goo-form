@@ -87,6 +87,21 @@ function App() {
             <label htmlFor="매우 그렇다">매우 그렇다</label>
           </div>
         </div>
+
+        {/* radio css 적용 */}
+        <div className="p-4">
+          <form>
+            <label className="inline-flex items-center">
+              <input type="radio" name="option" className="custom-radio" />
+              <span className="ml-2">Option 1</span>
+            </label>
+            <label className="inline-flex items-center">
+              <input type="radio" name="option" className="custom-radio" />
+              <span className="ml-2">Option 2</span>
+            </label>
+          </form>
+        </div>
+
         {/* 2번 ~ 11번 */}
         <div>2. 본 프로그램의 교육내용이 도움이 되었다고 생각하십니까?</div>
         <div>
