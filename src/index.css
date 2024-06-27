@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.custom-radio {
+  @apply appearance-none border border-gray-300 rounded-full;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.custom-radio:checked {
+  @apply bg-green-600;
+}

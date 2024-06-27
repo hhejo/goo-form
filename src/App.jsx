@@ -71,19 +71,38 @@ function App() {
           <div>그렇다</div>
           <div>매우 그렇다</div>
         </div>
-        <div>1. 본 프로그램에 대해 전반적으로 만족하셨습니까?</div>
-        <div className="flex">
-          <input type="radio" name="1번" value="1" id="전혀 그렇지 않다" />
-          <label htmlFor="전혀 그렇지 않다">전혀 그렇지 않다</label>
-          <input type="radio" name="1번" value="2" id="그렇지 않다" />
-          <label htmlFor="그렇지 않다">그렇지 않다</label>
-          <input type="radio" name="1번" value="3" id="보통이다" />
-          <label htmlFor="보통이다">보통이다</label>
-          <input type="radio" name="1번" value="4" id="그렇다" />
-          <label htmlFor="그렇다">그렇다</label>
-          <input type="radio" name="1번" value="5" id="매우 그렇다" />
-          <label htmlFor="매우 그렇다">매우 그렇다</label>
+        {/* 1번 */}
+        <div>
+          <div>1. 본 프로그램에 대해 전반적으로 만족하셨습니까?</div>
+          <div className="flex">
+            <input type="radio" name="1번" value="1" id="전혀 그렇지 않다" />
+            <label htmlFor="전혀 그렇지 않다">전혀 그렇지 않다</label>
+            <input type="radio" name="1번" value="2" id="그렇지 않다" />
+            <label htmlFor="그렇지 않다">그렇지 않다</label>
+            <input type="radio" name="1번" value="3" id="보통이다" />
+            <label htmlFor="보통이다">보통이다</label>
+            <input type="radio" name="1번" value="4" id="그렇다" />
+            <label htmlFor="그렇다">그렇다</label>
+            <input type="radio" name="1번" value="5" id="매우 그렇다" />
+            <label htmlFor="매우 그렇다">매우 그렇다</label>
+          </div>
         </div>
+
+        {/* radio css 적용 */}
+        <div className="p-4">
+          <form>
+            <label className="inline-flex items-center">
+              <input type="radio" name="option" className="custom-radio" />
+              <span className="ml-2">Option 1</span>
+            </label>
+            <label className="inline-flex items-center">
+              <input type="radio" name="option" className="custom-radio" />
+              <span className="ml-2">Option 2</span>
+            </label>
+          </form>
+        </div>
+
+        {/* 2번 ~ 11번 */}
         <div>2. 본 프로그램의 교육내용이 도움이 되었다고 생각하십니까?</div>
         <div>
           3. 본 프로그램을 통해 알게 된 교육내용과 정보가 향후 진로선택과 준비에
