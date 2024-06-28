@@ -74,16 +74,46 @@ function App() {
         {/* 1번 */}
         <div>
           <div>1. 본 프로그램에 대해 전반적으로 만족하셨습니까?</div>
-          <div className="flex">
-            <input type="radio" name="1번" value="1" id="전혀 그렇지 않다" />
+          <div className="flex p-4">
+            <input
+              type="radio"
+              name="1번"
+              value="1"
+              id="전혀 그렇지 않다"
+              className="custom-radio"
+            />
             <label htmlFor="전혀 그렇지 않다">전혀 그렇지 않다</label>
-            <input type="radio" name="1번" value="2" id="그렇지 않다" />
+            <input
+              type="radio"
+              name="1번"
+              value="2"
+              id="그렇지 않다"
+              className="custom-radio"
+            />
             <label htmlFor="그렇지 않다">그렇지 않다</label>
-            <input type="radio" name="1번" value="3" id="보통이다" />
+            <input
+              type="radio"
+              name="1번"
+              value="3"
+              id="보통이다"
+              className="custom-radio"
+            />
             <label htmlFor="보통이다">보통이다</label>
-            <input type="radio" name="1번" value="4" id="그렇다" />
+            <input
+              type="radio"
+              name="1번"
+              value="4"
+              id="그렇다"
+              className="custom-radio"
+            />
             <label htmlFor="그렇다">그렇다</label>
-            <input type="radio" name="1번" value="5" id="매우 그렇다" />
+            <input
+              type="radio"
+              name="1번"
+              value="5"
+              id="매우 그렇다"
+              className="custom-radio"
+            />
             <label htmlFor="매우 그렇다">매우 그렇다</label>
           </div>
         </div>
