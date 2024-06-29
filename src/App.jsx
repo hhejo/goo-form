@@ -80,7 +80,7 @@ function App() {
               name="1번"
               value="1"
               id="전혀 그렇지 않다"
-              className="custom-radio"
+              className="custom-radio radio-a"
             />
             <label htmlFor="전혀 그렇지 않다">전혀 그렇지 않다</label>
             <input
@@ -88,7 +88,7 @@ function App() {
               name="1번"
               value="2"
               id="그렇지 않다"
-              className="custom-radio"
+              className="custom-radio radio-a"
             />
             <label htmlFor="그렇지 않다">그렇지 않다</label>
             <input
@@ -96,7 +96,7 @@ function App() {
               name="1번"
               value="3"
               id="보통이다"
-              className="custom-radio"
+              className="custom-radio radio-b"
             />
             <label htmlFor="보통이다">보통이다</label>
             <input
@@ -104,7 +104,7 @@ function App() {
               name="1번"
               value="4"
               id="그렇다"
-              className="custom-radio"
+              className="custom-radio radio-c"
             />
             <label htmlFor="그렇다">그렇다</label>
             <input
@@ -112,7 +112,7 @@ function App() {
               name="1번"
               value="5"
               id="매우 그렇다"
-              className="custom-radio"
+              className="custom-radio radio-c"
             />
             <label htmlFor="매우 그렇다">매우 그렇다</label>
           </div>
