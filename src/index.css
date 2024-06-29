@@ -8,6 +8,34 @@
   height: 1.5rem;
 }
 
+.custom-radio:hover {
+  @apply bg-emerald-300;
+}
+
 .custom-radio:checked {
-  @apply bg-green-600;
+  @apply bg-green-500;
+}
+
+.radio-a:hover {
+  @apply bg-red-300;
+}
+
+.radio-a:checked {
+  @apply bg-red-500;
+}
+
+.radio-b:hover {
+  @apply bg-slate-300;
+}
+
+.radio-b:checked {
+  @apply bg-slate-500;
+}
+
+.radio-c:hover {
+  @apply bg-green-300;
+}
+
+.radio-c:checked {
+  @apply bg-green-500;
 }
