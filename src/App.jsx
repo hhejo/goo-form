@@ -24,6 +24,8 @@ function App() {
   const [pastedText, setPastedText] = useState("");
   const [programInfo, setProgramInfo] = useState(initialProgramInfo);
 
+  const [inputValue, setInputValue] = useState("");
+
   const handleChange = (e) => {
     setPastedText(e.target.value);
   };
@@ -37,6 +39,17 @@ function App() {
       subArea: pastedText.match(/\*중영역:\s*(.*)/)[1].trim(),
     });
     setPastedText("");
+  };
+
+  const handlePaste = async (e) => {
+    try {
+      e.preventDefault();
+      const text = await navigator.clipboard.readText();
+      setInputValue(text);
+      console.log(text);
+    } catch (err) {
+      console.error("Failed to read clipboard contents: ", err);
+    }
   };
 
   useEffect(() => {
@@ -64,6 +77,13 @@ function App() {
             onClick={submitPaste}
           >
             추출하기
+          </button>
+
+          <button
+            className="bg-blue-500 hover:bg-blue-600 active:bg-blue-700 text-white font-bold py-2 px-4 rounded transition"
+            onClick={handlePaste}
+          >
+            새로운추출버튼
           </button>
         </form>
         <div>
